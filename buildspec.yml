@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs:12
+    commands:
+      - echo "【安裝成功】node.js 12.x"
+  pre_build:
+    commands:
+      - echo "【編譯前】pre_build"
+  build:
+    commands:
+      - echo "【編譯開始時間】‘date‘"
+      - node -v
+  post_build:
+    commands:
+      - echo "【編譯完成時間】‘date‘"
