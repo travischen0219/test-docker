@@ -2,8 +2,6 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs:12
     commands:
       - echo "【安裝成功】node.js 12.x"
   pre_build:
